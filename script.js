@@ -24,3 +24,14 @@ document.getElementById("lastNums").innerHTML += password + "<br />";
 
 //set default length display of 25
 document.getElementById("length").innerHTML = "length: 25"
+
+//function to set length by slider 
+document.getElementById("slider").oninput = function(){
+
+if(document.getElementById("slider").value > 0){
+ document.getElementById("length").innerHTML = "Length: " + document.getElementById("slider").value;
+}
+else{
+    document.getElementById("length").innerHTML = "Length: 1";
+
+ }}
