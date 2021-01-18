@@ -8,7 +8,7 @@ function generate(){
     let password = "";
 
     ///create forloop for password characters
-    for(var i = 0 i <= complexity; i++){
+    for(var i = 0; i <= complexity; i++){
 
         password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
     }
