@@ -35,3 +35,10 @@ else{
     document.getElementById("length").innerHTML = "Length: 1";
 
  }}
+//function to copy PW to clipboard          
+function copyPassword(){
+    document.getElementById("display").select();
+    document.execCommand("Copy");
+
+    alert("Password copied to clipboard")
+}
