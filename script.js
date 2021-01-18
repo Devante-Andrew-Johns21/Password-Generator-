@@ -14,4 +14,7 @@ function generate(){
     }
 ///add password to display 
 document.getElementById("display").value = password;
+
+///add password to previously generated passwords section 
+document.getElementById("lastNums").innerHTML =+ password + "<br />";
 }
