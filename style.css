@@ -14,6 +14,11 @@ width: 100%;
     width: 100%;
 }
 
+#lenght{
+    display: inline-block;
+    width: 100px;
+}
+
 .previous_passwords{
     margin-bottom: 20pxS;
 }

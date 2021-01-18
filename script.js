@@ -21,3 +21,6 @@ document.getElementById("lastNums").innerHTML += password + "<br />";
 
 
 }
+
+//set default length display of 25
+document.getElementById("length").innerHTML = "length: 25"
