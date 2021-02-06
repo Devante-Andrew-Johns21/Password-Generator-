@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Generator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <header>
+ne
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      </header>
+<body>
+  <header>
 
-      <main>
-        <h1>Password Generator</h1>
+  </header>
 
-<section class="wrapper container-fluid">
-      <section class ="row row-cols-1 py-4">
+  <main>
+    <h1>Password Generator</h1>
+
+    <section class="wrapper container-fluid">
+      <section class="row row-cols-1 py-4">
         <div class="col-md-12">
           <h2>Generate a Password</h2>
         </div>
-      </div>
+    </section>
+      <section class="row row-cols-1 py-4 password-row">
+        <div class="col-md-12 container-fluid inner-container">
+          <p id="generatedPassword" class="generatedPassword">Your Secure Password</p>
+        </div>
       </section>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
+      <section class="row row-cols-1 py-4 button-row d-line">
+        <div class="col-md-12 button-container">
+          <button id="btn" type="button" class="btn btn-dark btn-danger">
+            Generate
+          </button>
         </div>
-
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
+      </section>
       </div>
-    </div>
-  </section>
+      </div>
+      </div>
   </main>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="script.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
