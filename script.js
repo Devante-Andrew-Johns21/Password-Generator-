@@ -1,15 +1,13 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generatePassword");
+// Global Vars.
+var buttonEl = document.getElementById("btn");
+var newPW = document.getElementById("#generatedPassword");
 
- //Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+ //when the button is clicked it will run the "generatePW" function
+buttonEl.addEventListener("click", generatePW);
+  
 
-  //passwordText.value = password;
 
-}
-
- //Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+ function generatePW() {
+   var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+ }
 
