@@ -53,6 +53,8 @@ var userPW = "";
 for (var i = 0; i < pwLength; i++) {
   var randomCharacter = userPickArray[Math.floor(Math.random() * userPickArray.length)];
  userPW += randomCharacter; 
+ //Makes the PW show up. Concatentation of random characters that chosen in the password variable 
+ console.log(userPW)
 }
 newPW.innerHTML = userPW; 
 }
