@@ -32,13 +32,28 @@ var confirmUppercase = confirm("Would you like your password to contain Uppercas
 var confirmSymbols = confirm("Would you like your password to contain Symbols? ( Click OK for Yes and Cancel for No") ;
 var confirmNumbers = confirm("Would you like your password to contain Numbers? ( Click OK for Yes and Cancel for No") ;
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  }
+if (confirmLowercase === true) {
+ userPickArray.push(...lowercase);
+   
+ }
+ if (confirmNumbers === true) {
+   userPickArray.push(...numbers);
+ }
+ if (confirmUppercase === true) {
+   userPickArray.push(...uppercase);
+ }
+ if (confirmSymbols === true) {
+   userPickArray.push(...symbols);
+ }
+ if (confirmLowercase === false && confirmSymbols === false && confirmNumbers === false && confirmUppercase === false) {
+   alert("You must chose at least one of the following characters: lowercase, uppercase, numbers, or symbols");
+   return
+ }
+var userPW = "";
+for (var i = 0; i < pwLength; i++) {
+  var randomCharacter = userPickArray[Math.floor(Math.random() * userPickArray.length)];
+ userPW += randomCharacter; 
+}
+newPW.innerHTML = userPW; 
+}
+
