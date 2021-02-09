@@ -1,6 +1,6 @@
 // Global Vars.
 var buttonEl = document.getElementById("btn");
-var newPW = document.getElementById("#generatedPassword");
+var newPW = document.getElementById("generatedPassword");
 
  //when the button is clicked it will run the "generatePW" function
 buttonEl.addEventListener("click", generatePW);
@@ -47,7 +47,7 @@ if (confirmLowercase === true) {
  }
  if (confirmLowercase === false && confirmSymbols === false && confirmNumbers === false && confirmUppercase === false) {
    alert("You must chose at least one of the following characters: lowercase, uppercase, numbers, or symbols");
-   return
+   return;
  }
 var userPW = "";
 for (var i = 0; i < pwLength; i++) {

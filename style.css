@@ -37,7 +37,9 @@ p {
 }
 
 .inner-container {
-border: 2px dotted  whitesmoke ;
+border: 2px dotted  whitesmoke;
+
+
 }
 /*the styles for the button rows*/
 
